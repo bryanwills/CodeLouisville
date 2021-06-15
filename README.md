@@ -4,6 +4,6 @@ Code Louisvllle course work repo.
 Downloaded files from Treehouse are stored as well as Syllabus material handed out by Code Louisville staff.
 
 [![Bryan Wills's Github 
-Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&show_icons=true&theme=onedark&count_private=true)](https://github.com/bryanwills/github-readme-stats)
+Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&show_icons=true&theme=monokai&count_private=true)](https://github.com/bryanwills/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact&theme=onedark)](https://github.com/bryanwills/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact&theme=monokai)](https://github.com/bryanwills/github-readme-stats)
