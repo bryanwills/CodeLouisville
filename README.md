@@ -5,3 +5,5 @@ Downloaded files from Treehouse are stored as well as Syllabus material handed o
 
 [![Bryan Wills's Github 
 Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&show_icons=true&theme=onedark&count_private=true)](https://github.com/bryanwills/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact)](https://github.com/bryanwills/github-readme-stats)
