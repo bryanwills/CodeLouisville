@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;300&display=swap');
+
+.padding-hack {
+  position: relative;
+}
+
+.vw-solution{
+    position: relative;
+  
+}
+
+.aspect-ratio {
+    position: relative;
+  
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 5vh;
+    background-color: #212121;
+    color: #fff;
+}
+
+h1{
+  max-width: 95vw; 
+  margin: 30px auto;
+  font-weight: bold;
+}
+
+h1 span{
+    font-weight:normal;
+}
+
+h2{
+    padding: 10px; 
+    background-color:#fff;}
+
+ul{
+  display: flex; 
+  gap: 1vw;
+  max-width: 95vw; 
+  margin: 10 auto;
+  color:#212121;
+}
+li{
+    background-color:#dedede; 
+    border-radius:20px; 
+    overflow:hidden;
+}
+
+code{
+  display: block;
+  padding: 20px;
+  white-space: pre-wrap;  
+  font-family:monospace, arial; 
+  max-width: 31vw;
+}
+
+*{
+    box-sizing: border-box;
+}
