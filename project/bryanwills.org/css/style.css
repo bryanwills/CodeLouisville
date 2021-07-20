@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 3.5s;
+    background-color: #7C98B3;
+}
+
+footer {
+    position: bottom;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.copy {
+    font-size: 24px;
+}
+
+.logos {
+
+}
+
+.logo{
+  color: #CEE5F2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  
+}
+
+p .tech {
+    font-size: 14px;
+}
+
+/*From input#darkmode to main, code used from https://codepen.io/bluebrown/pen/OJmyggb I did modify the colors and positioning to suit my needs  */
+input#darkmode {
+  float: right;
+  visibility: hidden;
+}
+
+input#darkmode:checked + main {
+  --color-main: #fff;
+  --bg-main: #212121;
+  --bg-text: #fff;
+  --bg-switch: rgba(240, 246, 252, 0.15);
+  --content-switch-after: " Light Mode ☀️"
+}
+
+#switch {
+  cursor: pointer;
+  user-select: none;
+  background: var(--bg-switch, rgba(27, 31, 35, 0.05));
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: relative;
+  padding: 20px;
+}
+
+#switch::after {
+  content: var(--content-switch-after, " Dark Mode 🌙");
+}
+
+main {
+  height: 100%;
+  padding: 1.5rem clamp(1rem, 5%, 3rem);
+  color: var(--color-main, #24292e);
+  background-color: var(--bg-main, #fff);
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0 auto;
+  padding-bottom: 2.25rem;
+  border-radius: 5px;
+}
+
+nav{
+  display: flex;
+  position: absolute !important;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  width: 93.5%;
+  background-color: #7C98B3 ;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px;
+  float: left;
+  border-radius: 8px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  list-style: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding-bottom: 0.25em;
+  margin-left: 1em;
+  background-color: #212121;
+}
+
+.nav-links a{
+  color: #CEE5F2;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+.nav-links ul{
+  margin-top: 10%
+}
+
+.nav-links a:hover{
+  background-color: aliceblue;
+  color: #212121;
+}
+
+.nav-links li{
+  list-style: none;
+  color: black;
+
+}
+
+.burger div{
+  width: 25px;
+  height: 2.75px;
+  background-color: #CEE5F2;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: none;
+}
+
+.placeholder {
+  
+  display: flex;
+  height: 60vh;
+  background-image: url(//unsplash.it/400/400);
+  background-size: cover;
+  background-color: #333;
+  width: 100%;
+  place-items: center;
+  z-index: -1;
+  margin-top: 6rem;
+  border-radius: 8px;
+  padding-top: 4em;
+
+}
+
+.link-grow {
+  transform: scale(2);
+  background: black;
+}
+
+.hovered-link {
+  color: white;
+}
+
+.front-cover img{
+  position: relative;
+  z-index: -3;
+}
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+
+  }
+}
+
+/* Let's get responsive! */
+
+/* when the screen is 1024px wide, make this adjustment so the menu looks good */
+  @media screen and (max-width:1024px){
+    .nav-links{
+        width: 40%;
+        color: #536B78; !important;
+    }
+  }
+  
+  /*Don't display burger menu on mobile phones
+  
+  @media screen and (max-width:768px){
+    body{
+        display: none;
+    }
+  }
+  */
+  
+  @media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh; /*allow for full screen*/
+        top: 8vh;
+        background-color: #7C98B3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+        color: #536B78; !important;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    .burger{
+        display: block; /*Allows us to see the burger on a smaller screen but not on larger screen*/
+        background-color: #7C98B3; !important;
+    }
+  }
+  
+  
