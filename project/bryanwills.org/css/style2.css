@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3vw 7.5vw 7.5vw 20vw 5vw 10vw;
+    grid-gap: 0.5em;
+    margin: 0 auto;
+    max-width: 99%;
+    padding: 0.75em 0;
+    color: #fff;
+}
+
+.dark {
+    grid-column: span 5;
+    grid-row: span 1;
+}
+
+header {
+    grid-column: span 5;
+    grid-row: span 1;
+}
+
+nav {
+    grid-column: span 5;
+    grid-row: span 1;
+}
+
+.content {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+aside {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+footer {
+    grid-column: span 5;
+    grid-row: span 1;
+}
+
+header,
+.content,
+.dark,
+nav,
+aside,
+footer {
+    background: #212121;
+    display: flex;
+    border: 4px solid purple;
+}
+
+img.footer-flex {
+    flex: 1;
+    border: 4px solid red;
+    position: inherit;
+}
+
+.footer-flex {}
+
+.footer-flex.nth-child {
+    margin-right: 20px;
+}
+
+input#darkmode {
+    float: right;
+    visibility: hidden;
+}
+
+input#darkmode:checked+main {
+    --color-main: #fff;
+    --bg-main: #212121;
+    --bg-text: #fff;
+    --bg-switch: rgba(240, 246, 252, 0.15);
+    --content-switch-after: " Light Mode ☀️"
+}
+
+#switch {
+    cursor: pointer;
+    user-select: none;
+    background: var(--bg-switch, rgba(27, 31, 35, 0.05));
+    border-radius: 6px;
+    position: relative;
+    top: 15px;
+}
+
+#switch::after {
+    content: var(--content-switch-after, " Dark Mode 🌙");
+}
+
+@media (max-width: 700px) {
+    .content,
+    aside {
+        grid-column: 1 / span 5;
+    }
+}
