@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;s
     box-sizing: border-box;
 }
 
@@ -22,6 +24,10 @@ body {
     background-color: #7C98B3;
 }
 
+header {
+    width: 100%;
+}
+
 footer {
     position: bottom;
     bottom: 0;
@@ -35,8 +41,6 @@ footer {
 .copy {
     font-size: 24px;
 }
-
-.logos {}
 
 .logo {
     color: #CEE5F2;
@@ -89,8 +93,8 @@ input#darkmode:checked+main {
 }
 
 .container {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -117,11 +121,12 @@ main {
 }
 
 .display-container {
+    position: relative;
     display: grid;
     grid-template-rows: .2fr .45fr .80fr 0.35fr;
     grid-gap: 20px;
-    margin-top: 2.5vh;
     border: 3px solid red;
+    margin-top: 2rem;
 }
 
 nav {

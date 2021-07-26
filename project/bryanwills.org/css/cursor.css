@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.4em;
+}
+
+body {
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    cursor: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+img {
+    height: 700px;
+    width: 700px;
+}
+
+/* Give equal widths to h1 and nav-links */
+.nav-links, h1{
+    flex: 1;
+}
+
+.nav-links li {
+    padding: 1rem;
+}
+
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    /* By default, the circle from the cursor div does not follow mouse pointer at it's center. Had to play around with the settings to get this right, and from what I can tell, the below CSS property, moves it to directly center with mouse cursor enabled. */
+    transform: translate(-50%, -50%);
+    /* without the below property, a div on top of a div (navigation or anything else) won't allow anything inside the circle to be selected. To change this, modify pointer events to be none. */
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+.link-grow {
+    transform: scale(2);
+    background: black;
+}
+
+.hovered-link {
+    color: white;
+}
+
+.cover {
+    display: grid;
+    height: 55vh;
+    position: relative;
+    background-image: url(//unsplash.it/400/400);
+    background-size: cover;
+    background-color: #333;
+    z-index: -3;
+}
