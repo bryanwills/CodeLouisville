@@ -51,6 +51,7 @@ img {
     /* without the below property, a div on top of a div (navigation or anything else) won't allow anything inside the circle to be selected. To change this, modify pointer events to be none. */
     pointer-events: none;
     transition: all 0.3s ease;
+    /* Only transform backgrounds with the below property. */
     transition-property: background, transform;
     transform-origin: 100% 100%;
     z-index: -1;
@@ -58,7 +59,7 @@ img {
 }
 
 .link-grow {
-    transform: scale(2);
+    transform: scale(1.5);
     background: black;
 }
 
