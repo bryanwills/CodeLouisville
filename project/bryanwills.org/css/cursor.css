@@ -1,78 +1,112 @@
+:root {
+  --highlight-bg: #79ffe1;
+  --highlight-txt: #0c4047;
+}
+
+/* If the user has dark mode enabled on their device, the site will be shown in dark mode as well */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --highlight-bg: #d9f8ff;
+    --highlight-txt: #212121;
+  }
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    line-height: 1.4em;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1000px;
+  color: #323232;
 }
 
 body {
-    width: 80%;
-    font-family: "Poppins", sans-serif;
-    cursor: none;
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    min-height: 10vh;
-    align-items: center;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 img {
-    height: 700px;
-    width: 700px;
+  height: 700px;
+  width: 700px;
 }
 
 /* Give equal widths to h1 and nav-links */
-.nav-links, h1{
-    flex: 1;
+.nav-links,
+h1 {
+  flex: 1;
 }
 
+.nav-links {
+  list-style: none;
+}
 .nav-links li {
-    padding: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #323232;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .cursor {
-    width: 3rem;
-    height: 3rem;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: absolute;
-    /* By default, the circle from the cursor div does not follow mouse pointer at it's center. Had to play around with the settings to get this right, and from what I can tell, the below CSS property, moves it to directly center with mouse cursor enabled. */
-    transform: translate(-50%, -50%);
-    /* without the below property, a div on top of a div (navigation or anything else) won't allow anything inside the circle to be selected. To change this, modify pointer events to be none. */
-    pointer-events: none;
-    transition: all 0.3s ease;
-    /* Only transform backgrounds with the below property. */
-    transition-property: background, transform;
-    transform-origin: 100% 100%;
-    z-index: -1;
-    backdrop-filter: blur(10px);
+  width: 5rem;
+  height: 5rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  /* By default, the circle from the cursor div does not follow mouse pointer at it's center. Had to play around with the settings to get this right, and from what I can tell, the below CSS property, moves it to directly center with mouse cursor enabled. */
+  transform: translate(-50%, -50%);
+  /* without the below property, a div on top of a div (navigation or anything else) won't allow anything inside the circle to be selected. To change this, modify pointer events to be none. */
+  pointer-events: none;
+  transition: all 0.3s ease;
+  /* Only transform backgrounds with the below property. */
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: -1;
+  backdrop-filter: grayscale();
 }
 
 .link-grow {
-    transform: scale(1.5);
-    background: black;
+  transform: scale(1.5);
+  background: black;
 }
 
 .hovered-link {
-    color: white;
+  color: white;
 }
 
 .cover {
-    display: grid;
-    height: 55vh;
-    position: relative;
-    background-image: url(//unsplash.it/400/400);
-    background-size: cover;
-    background-color: #333;
-    z-index: -3;
+  display: grid;
+  height: 55vh;
+  position: relative;
+  background-image: url(//unsplash.it/400/400);
+  background-size: cover;
+  background-color: #333;
+  z-index: -3;
+}
+
+h4,
+h2 {
+  padding: 5px;
+  text-align: center;
 }
