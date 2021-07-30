@@ -1,30 +1,12 @@
 :root {
-	--nc-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
-	--nc-tx-1: #000000;
-	--nc-tx-2: #1A1A1A;
-	--nc-bg-1: #FFFFFF;
-	--nc-bg-2: #F6F8FA;
-	--nc-bg-3: #E5E7EB;
-	--nc-lk-1: #0070F3;
-	--nc-lk-2: #0366D6;
-	--nc-lk-tx: #FFFFFF;
-	--nc-ac-1: #79FFE1;
-    --nc-ac-tx: #0C4047;
+	--highlight-bg: #79FFE1;
+    --highlight-txt: #0C4047;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--nc-tx-1: #ffffff;
-		--nc-tx-2: #eeeeee;
-		--nc-bg-1: #000000;
-		--nc-bg-2: #111111;
-		--nc-bg-3: #222222;
-		--nc-lk-1: #3291FF;
-		--nc-lk-2: #0070F3;
-		--nc-lk-tx: #FFFFFF;
-		--nc-ac-1: #d9f8ff;
-		--nc-ac-tx: #212121;
+		--highlight-bg: #d9f8ff;
+		--highlight-txt: #212121;
 	}
 }
 
@@ -33,6 +15,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 1000px;
 }
 
 html,
@@ -50,9 +33,8 @@ body {
     justify-content: center;
     align-items: center;
     transition: background-color 3.5s;
-    background-color: #7C98B3;
     margin: 0 auto;
-	max-width: 850px;
+
     overflow-x: hidden;
 	word-break: break-word;
 	overflow-wrap: break-word;
@@ -82,12 +64,10 @@ footer {
     color: #CEE5F2;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 20px;
-    margin-left: -40px;
-}
-
-p .tech {
-    font-size: 14px;
+    font-size: 1.03rem;
+	line-height: 1.5;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .dark-mode-switch {
@@ -129,17 +109,21 @@ input#darkmode:checked+main {
 }
 
 .container {
-    height: 90%;
-    width: 90%;
+    height: 90vh;
+    width: 80vw;
     margin: 0 auto;
+    padding: 0 auto;
+    font-size: 1.03rem;
+	line-height: 1.5;
 }
 
 main {
     height: 100%;
-    padding: 1.5rem clamp(2rem, 5%, 3rem);
+    width: 100%;
     color: var(--color-main, #24292e);
     background-color: var(--bg-main, #fff);
     font-family: sans-serif;
+    border: 5px solid red;
 }
 
 .placeholder {
@@ -151,17 +135,18 @@ main {
     width: 100%;
     place-items: center;
     z-index: -1;
-    margin: 35px;
+    /* margin: 35px; */
+    margin-top: 3em;
     border-radius: 8px;
+    font-size: 1.03rem;
+	line-height: 1.5;
     border: 5px solid yellow;
 }
 
 .display-container {
     position: relative;
-    display: grid;
-    grid-template-rows: .2fr .45fr .80fr 0.35fr;
-    grid-gap: 20px;
-    border: 3px solid red;
+    display: flex;
+    /*border: 3px solid red;*/
     margin-top: 2rem;
 }
 
@@ -169,15 +154,15 @@ nav {
     display: flex;
     flex: 1;
     position: absolute !important;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     height: 7vh;
-    width: 91.25%;
+    width: 100%;
     background-color: #7C98B3;
     font-family: 'Poppins', sans-serif;
-    margin-left: 0px;
     border-radius: 8px;
-    border: 5px solid green;
+    /* border: 5px solid green; */
+    font-size: 1.03rem;
+	line-height: 1.5;
 }
 
 .nav-links {
@@ -247,8 +232,8 @@ nav {
 
 ::selection {
 	/* Set background color for selected text */
-	background: var(--nc-ac-1);
-	color: var(--nc-ac-tx);
+	background: var(--highlight-bg);
+	color: var(--highlight-txt);
 }
 
 @keyframes navLinkFade {
@@ -278,7 +263,7 @@ nav {
 
 
 /*Don't display burger menu on mobile phones
-  
+
   @media screen and (max-width:768px){
     body{
         display: none;
