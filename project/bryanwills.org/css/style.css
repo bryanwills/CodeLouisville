@@ -1,305 +1,373 @@
 :root {
-	--highlight-bg: #79FFE1;
-    --highlight-txt: #0C4047;
+  --highlight-bg: #79ffe1;
+  --highlight-txt: #0c4047;
 }
+
+/* If the user has dark mode enabled on their device, the site will be shown in dark mode as well */
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--highlight-bg: #d9f8ff;
-		--highlight-txt: #212121;
-	}
+  :root {
+    --highlight-bg: #d9f8ff;
+    --highlight-txt: #212121;
+  }
 }
 
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    max-width: 1000px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 1000px;
+  background-color: #323232;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
+  margin: auto;
 }
 
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    justify-content: center;
-    align-items: center;
-    transition: background-color 3.5s;
-    margin: 0 auto;
-
-    overflow-x: hidden;
-	word-break: break-word;
-	overflow-wrap: break-word;
-    font-size: 1.03rem;
-	line-height: 1.5;
+  transition: background-color 3.5s;
+  margin: 0 auto;
+  overflow-x: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.03rem;
+  line-height: 1.5;
 }
 
 header {
-    width: 100%;
+  width: 100%;
 }
 
 footer {
-    position: bottom;
-    bottom: 0;
-    left: 15px;
-    right: 15px;
-    width: 100%;
-    height: 200px;
-    text-align: center;
+  position: bottom;
+  padding: 20px;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: #7c98b3;
 }
 
 .copy {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .logo {
-    color: #CEE5F2;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-size: 1.03rem;
-	line-height: 1.5;
-    padding-left: 5px;
-    padding-top: 5px;
-}
-
-.dark-mode-switch {
-    margin-top: -10px;
-}
-
-.nav {
-    margin-top: 30px;
-    width: 90vh;
-}
-
-
-/*From input#darkmode to main, code used from https://codepen.io/bluebrown/pen/OJmyggb I did modify the colors and positioning to suit my needs  */
-
-input#darkmode {
-    float: right;
-    visibility: hidden;
-}
-
-input#darkmode:checked+main {
-    --color-main: #fff;
-    --bg-main: #212121;
-    --bg-text: #fff;
-    --bg-switch: rgba(240, 246, 252, 0.15);
-    --content-switch-after: " Light Mode ☀️"
-}
-
-#switch {
-    cursor: pointer;
-    user-select: none;
-    background: var(--bg-switch, rgba(27, 31, 35, 0.05));
-    border-radius: 6px;
-    position: relative;
-    top: 15px;
-}
-
-#switch::after {
-    content: var(--content-switch-after, " Dark Mode 🌙");
+  color: #cee5f2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1em;
+  line-height: 1.5;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 .container {
-    height: 90vh;
-    width: 80vw;
-    margin: 0 auto;
-    padding: 0 auto;
-    font-size: 1.03rem;
-	line-height: 1.5;
-}
-
-main {
-    height: 100%;
-    width: 100%;
-    color: var(--color-main, #24292e);
-    background-color: var(--bg-main, #fff);
-    font-family: sans-serif;
-    border: 5px solid red;
+  height: 90vh;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 0 auto;
+  line-height: 1.5;
+  color: var(--color-main, #24292e);
+  background-color: var(--bg-main, #323232;);
+  font-family: sans-serif;
 }
 
 .placeholder {
-    display: grid;
-    height: 55vh;
-    background-image: url(//unsplash.it/400/400);
-    background-size: cover;
-    background-color: #333;
-    width: 100%;
-    place-items: center;
-    z-index: -1;
-    /* margin: 35px; */
-    margin-top: 3em;
-    border-radius: 8px;
-    font-size: 1.03rem;
-	line-height: 1.5;
-    border: 5px solid yellow;
+  display: grid;
+  height: 65vh;
+  background-image: url(//unsplash.it/400/400);
+  background-size: cover;
+  background-color: #333;
+  width: 100%;
+  place-items: center;
+  z-index: -1;
+  /* margin: 35px; */
+  margin-top: 3em;
+  border-radius: 8px;
+  font-size: 1.03rem;
+  line-height: 1.5;
 }
 
 .display-container {
-    position: relative;
-    display: flex;
-    /*border: 3px solid red;*/
-    margin-top: 2rem;
+  position: relative;
+  display: flex;
+  /*border: 3px solid red;*/
+  margin-top: 2rem;
 }
 
 nav {
-    display: flex;
-    flex: 1;
-    position: absolute !important;
-    justify-content: space-between;
-    height: 7vh;
-    width: 100%;
-    background-color: #7C98B3;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 8px;
-    /* border: 5px solid green; */
-    font-size: 1.03rem;
-	line-height: 1.5;
+  display: flex;
+  flex: 1;
+  position: absolute !important;
+  justify-content: space-between;
+  height: 7vh;
+  width: 100%;
+  padding: 5px;
+  background-color: #323232;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  font-size: 1.03rem;
+  line-height: 1.5;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 45%;
-    list-style: none;
-    border-radius: 5px;
-    margin-bottom: 1em;
-    padding-bottom: 0.25em;
-    margin-left: 1em;
-    background-color: #212121;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  list-style: none;
+  border-radius: 5px;
+  background-color: #323232;
 }
 
 .nav-links a {
-    color: #CEE5F2;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 1em;
+  color: #cee5f2;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .nav-links ul {
-    margin-top: 10%
+  margin-top: 10%;
 }
 
 .nav-links a:hover {
-    background-color: aliceblue;
-    color: #212121;
+  background-color: aliceblue;
+  color: #212121;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 .nav-links li {
-    list-style: none;
-    color: black;
+  list-style: none;
+  color: black;
 }
 
 .burger div {
-    width: 25px;
-    height: 2.75px;
-    background-color: #CEE5F2;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 25px;
+  height: 2.75px;
+  background-color: #cee5f2;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.hide {
+  max-height: 0 !important;
+}
+
+.pointerCursor:hover {
+  cursor: pointer;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
 }
 
 .burger {
-    display: none;
+  display: none;
 }
 
 .link-grow {
-    transform: scale(2);
-    background: black;
+  transform: scale(2);
+  background: black;
 }
 
 .hovered-link {
-    color: white;
+  color: white;
 }
 
 .front-cover img {
-    position: relative;
-    z-index: -3;
+  position: relative;
+  z-index: -3;
 }
 
 .nav-active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 ::selection {
-	/* Set background color for selected text */
-	background: var(--highlight-bg);
-	color: var(--highlight-txt);
+  /* Set background color for selected text */
+  background: var(--highlight-bg);
+  color: var(--highlight-txt);
 }
 
 @keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
-
 
 /* Let's get responsive! */
 
-
 /* when the screen is 1024px wide, make this adjustment so the menu looks good */
 
-@media screen and (max-width:1024px) {
-    .nav-links {
-        width: 40%;
-        color: #536B78;
-        !important;
+@media screen and (max-width: 795px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;;
     }
-}
 
+    body {
+        word-break: normal;
+        overflow-wrap: unset;
+    }
 
-/*Don't display burger menu on mobile phones
+    .container{
+        max-width: 768px;
+    }
 
-  @media screen and (max-width:768px){
-    body{
+    .burger {
+    display: block !important;
+    background-color: #7c98b3;
+    }
+    nav {
         display: none;
     }
-  }
-  */
+    ul {
+        
+    }
 
-@media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        /*allow for full screen*/
-        top: 8vh;
-        background-color: #7C98B3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li {
-        opacity: 0;
-        color: #536B78;
-        !important;
-        padding: 1rem;
-        border-radius: 5px;
-    }
-    .burger {
-        display: block;
-        /*Allows us to see the burger on a smaller screen but not on larger screen*/
-        background-color: #7C98B3;
-        !important;
-    }
 }
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    .container {
+    width: 800px;
+}
+.nav-links {
+    width: 40%;
+    color: #536b78;
+}
+
+nav {
+     display: flex;
+     flex: 1;
+     justify-content: space-evenly;
+     width: 97%;
+     font-size: 1em;
+}
+.nav-links {
+    width: 70%;
+    font-size: .8em;
+}
+h4 {
+    font-size: 1em;
+}
+.logo {
+    font-size: .7em;
+    letter-spacing: 1px;
+}
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container {
+    width: 1000px;
+  }
+
+  nav {
+    display: flex;
+    position: absolute !important;
+    justify-content: space-between;
+    height: 7vh;
+    width: 60vw;
+    padding: 5px;
+    background-color: #323232;
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    font-size: 0.4rem;
+    line-height: 1.5;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    list-style: none;
+    border-radius: 5px;
+    background-color: #323232;
+  }
+
+  .nav-links a {
+    color: #cee5f2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .nav-links ul {
+    margin-top: 10%;
+  }
+
+  .nav-links a:hover {
+    background-color: aliceblue;
+    color: #212121;
+  }
+
+  .nav-links li {
+    list-style: none;
+    color: black;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 2.75px;
+    background-color: #cee5f2;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .container {
+    width: 1025px;
+  }
+}
+
+@media (min-width: 1501px) {
+  .container {
+    width: 1360px;
+  }
+}
+/*
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #7c98b3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+    color: #536b78;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .burger {
+    display: block;
+    background-color: #7c98b3;
+  }
+}*/
