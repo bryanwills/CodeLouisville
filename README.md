@@ -1,10 +1,10 @@
 # CodeLouisville Project
 
-#### I originally planned to host this site at bryanwills.org. I really wanted to implement a dark mode switch for my entire site, but had difficulties in getting it to work the way I wanted it to and look the way I wanted it to. The code I used from a Codepen that someone else had done, had the label ID in the main element which caused complications for me elsewhere. I still have my original site layout hosted on bryanwills.org with the elements and divs outlined with a border color.
+#### I originally planned to host this site at [bryanwills.org](bryanwills.org). I really wanted to implement a dark mode switch for my entire site, but had difficulties in getting it to work the way I wanted it to and look the way I wanted it to. The code I used from a Codepen that someone else had done, had the label ID in the main element which caused complications for me elsewhere. I still have my original site layout hosted on [bryanwills.org](bryanwills.org) with the elements and divs outlined with a border color.
 
 ## Homepage
 
-#### The homepage for bryanwills.dev is just a simple site that shows a random picture every time the page is loaded or refreshed. If a user selects text on this page, the text color and highlighted background changes color, just with some simple CSS variables.
+#### The homepage for [bryanwills.dev](bryanwills.dev) is just a simple site that shows a random picture every time the page is loaded or refreshed. If a user selects text on this page, the text color and highlighted background changes color, just with some simple CSS variables.
 
 ## Cursor Page
 
@@ -13,7 +13,7 @@
 #### If you look at Dev Tools, it will show the live data for the mouse cursor coordinates for this page and script, which is what I used when trying to figure out what I was going to do with getting the mouse coordinates.
 
 ## Blog
-#### Prior to this class, I was working on hosting my own blog through my cloud server which points to bryanwills.dev and created a sub-domain blog.bryanwills.dev which is riding a 11ty framework using a .eleventy.js file to call the options I wish to configure, input and output folders while the posts are written in Markdown which is converted to HTML using the Nunjucks language for templates. This is a hobby of mine and I want to start a technical blog to maybe get a following behind me. Halfway through the Code Louisivlle session, I found out about Forem which is the platform for one of my favorite sites, dev.to that they use for their blogging platform. I didn't have enough time to complete before the deadline.
+#### Prior to this class, I was working on hosting my own blog through my cloud server which points to [bryanwills.dev](bryanwills.dev) and created a sub-domain [blog.bryanwills.dev](blog.bryanwills.dev) which is riding a 11ty framework using a .eleventy.js file to call the options I wish to configure, input and output folders while the posts are written in Markdown which is converted to HTML using the Nunjucks language for templates. This is a hobby of mine and I want to start a technical blog to maybe get a following behind me. Halfway through the Code Louisivlle session, I found out about Forem which is the platform for one of my favorite sites, dev.to that they use for their blogging platform. I didn't have enough time to complete before the deadline.
 
 ## Projects Page
 #### Projects

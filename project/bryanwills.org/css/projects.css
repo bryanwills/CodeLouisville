@@ -1,23 +1,22 @@
-/* :root {
-  --highlight-bg: #79ffe1;
-  --highlight-txt: #0c4047;
-}*/
+:root {
+  --highlight-bg: #d9f8ff;
+  --highlight-txt: #212121;
+}
 
 /* If the user has dark mode enabled on their device, the site will be shown in dark mode as well */
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --highlight-bg: #d9f8ff;
     --highlight-txt: #212121;
   }
-} */
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   max-width: 1000px;
-  background-color: #fff;
 }
 
 html,
@@ -31,11 +30,11 @@ html {
 }
 
 body {
-  transition: background-color 3.5s;
+  transition: background-color 1.5s;
   margin: 0 auto;
   overflow-x: hidden;
   word-break: break-word;
-  background-color: #323232;
+  background-color: #606060;
   overflow-wrap: break-word;
   font-size: 1.03rem;
   line-height: 1.5;
@@ -62,6 +61,7 @@ footer {
 
 .logo {
   color: #cee5f2;
+  background: #606060;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1em;
@@ -71,29 +71,14 @@ footer {
 }
 
 .container {
-  height: 90vh;
+  height: 4vh;
   width: 80vw;
   margin: 0 auto;
   padding: 0 auto;
   line-height: 1.5;
-  color: var(--color-main, #212121);
-  background-color: var(--bg-main, #fff);
+  color: var(--color-main, #24292e);
+  background-color: var(--bg-main, #606060);
   font-family: sans-serif;
-}
-
-.placeholder {
-  display: grid;
-  height: 65vh;
-  background-image: url(//unsplash.it/400/400);
-  background-size: cover;
-  background-color: #212121;
-  width: 100%;
-  place-items: center;
-  z-index: -1;
-  /* margin: 35px; */
-  margin-top: 3em;
-  font-size: 1.03rem;
-  line-height: 1.5;
 }
 
 .display-container {
@@ -111,11 +96,12 @@ nav {
   height: 7vh;
   width: 100%;
   padding: 5px;
-  background-color: #212121;
+  background-color: #606060;
   font-family: "Poppins", sans-serif;
   border-radius: 8px;
   font-size: 1.03rem;
   line-height: 1.5;
+  border: none;
 }
 
 .nav-links {
@@ -124,11 +110,11 @@ nav {
   width: 60%;
   list-style: none;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #606060;
 }
 
 .nav-links a {
-  color: #323232;
+  color: #cee5f2;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -196,55 +182,116 @@ nav {
   }
 }
 
+.projects-main {
+
+}
+
+.sparta {
+    display: grid;
+    height: 35vh;
+    width: 35vw;
+    background-image: url(//unsplash.it/200/200);
+    background-size: cover;
+    background-color: #606060;
+    width: 100%;
+    z-index: -1;
+    margin-top: 3em;
+    font-size: 1.03rem;
+    line-height: 1.5;
+}
+
+.org {
+
+}
+
+
 .form {
-    float: left;
-    margin: 20px;
-    margin-top: 35vh;
+  margin: 0px;
+  margin-top: 35vh;
+  padding: 10px;
+  background-color: #606060;
 }
 
 .form > div {
-    position: relative;
-    margin-top: 2vh;
+  position: relative;
+  margin-top: 2vh;
+  width: 90%;
 }
 
-input,
-textarea {
-  border: 3px solid azureblue;
-  background: none;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  padding: 6px 10px;
-  color: azureblue;
+input:disabled {
+  color: white;
 }
 
 input:focus,
 textarea:focus {
-  background: rgb(170, 87, 126);
+  background: rgb(245, 119, 178);
   color: white;
-  font-size: 80%;
   z-index: 2;
 }
 
 textarea {
   display: block;
   resize: vertical;
+  width: 90%;
+  background-color: rgb(245, 119, 178);
+  color: white;
 }
 
 label {
   position: relative;
-  color: black;
+  color: rgb(5, 5, 27);
   padding: 6px 5px;
 }
 
+.services {
+  color: #d9f8ff;
+}
+
+label.choice {
+  color: #d9f8ff;
+}
+
+fieldset {
+  color: #d9f8ff;
+}
+
+legend#info.info-description {
+  color: #d9f8ff;
+}
+legend#subscription {
+  color: #d9f8ff;
+}
+
+legend#services.services-description {
+  color: #d9f8ff;
+}
 input:placeholder-shown + label {
   color: white;
 }
 
 ::placeholder {
-  cursor: text;
-  color: black;
+    color: white;
+}
+
+label#fullname.description,
+label#email.description,
+label#message.description {
+  color: #d9f8ff;
+}
+
+input#email {
+  color: white;
+  background-color: rgb(245, 119, 178);
+}
+
+input#fullname {
+  color: white;
+  background-color: rgb(245, 119, 178);
+}
+
+input#message {
+  color: white;
+  background-color: rgb(245, 119, 178);
 }
 
 form {
@@ -252,39 +299,111 @@ form {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
   }
   input:focus,
   textarea:focus {
     padding: 2px 4px 16px 4px;
-    color: white;
   }
-
 }
 
 input:focus + label {
   color: white;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  border-top: 1px solid azureblue;
-  border-left: 1px solid azureblue;
-  border-right: 1px solid azureblue;
-  border-bottom: 1px solid azureblue;
+input#saveForm {
+  width: 120px;
+  height: 35px;
+  background-color: #536b78;
+  position: relative;
+  border: 3px solid #57dab2;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8em;
 }
-input[type="text"],
-input[type="email"] {
-  width: 50%;
+
+input#saveForm:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  transition: all 0.4s;
+  background-color: #57dab2;
+  border: 3px solid #536b78;
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: 0;
-  border-color: #4697e4;
-  color: white;
+
+input#saveForm:active {
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  background: #57dab2;
+  border: 3px solid #536b78;
+}
+
+input#saveForm:hover {
+  background: #57dab2;
+  border: 3px solid #536b78;
+  transition: all 0.4s ease-in;
+  width: 125px;
+  height: 40px;
+}
+
+.file-upload {
+  position: absolute;
+  display: inline-block;
+  width: 30vw;
+}
+
+.file-upload:active {
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  background: #57dab2;
+  border: 3px solid #536b78;
+}
+
+.file-upload:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  transition: all 0.4s;
+  background-color: #57dab2;
+  border: 3px solid #536b78;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  color: #000;
+  width: 18vw;
+  background-color: #536b78;
+  border-radius: 0.6em;
+  border: 3px solid #57dab2;
+  text-align: center;
+  transition: background 0.3s;
+  &:hover {
+    cursor: pointer;
+    background: #000;
+  }
+}
+
+.file-upload__label:hover {
+  background: #57dab2;
+  border: 3px solid #536b78;
+  transition: all 0.4s ease-in;
+}
+
+.file-upload__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  border: 2px solid azureblue;
 }
 
 /* Let's get responsive! */
@@ -299,16 +418,15 @@ textarea:focus {
   }
 
   body {
-    word-break: normal;
-    overflow-wrap: unset;
   }
 
   .container {
+    min-width: 380px;
     max-width: 768px;
   }
 
   .burger {
-    display: block !important;
+    display: block;
     background-color: #7c98b3;
   }
   nav {
@@ -362,7 +480,7 @@ textarea:focus {
     height: 7vh;
     width: 63vw;
     padding: 12px;
-    background-color: #fff;
+    background-color: #606060;
     font-family: "Poppins", sans-serif;
     border-radius: 6px;
     font-size: 0.4rem;
@@ -375,7 +493,7 @@ textarea:focus {
     width: 60%;
     list-style: none;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #606060;
   }
 
   .nav-links a {
@@ -388,6 +506,7 @@ textarea:focus {
 
   .nav-links ul {
     margin-top: 10%;
+    background-color: #606060;
   }
 
   .nav-links a:hover {

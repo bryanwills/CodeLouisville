@@ -20,112 +20,126 @@
     <title>Bryan Wills's Website</title>
   </head>
 <body>
-    <div class="container">
-      <div class="display-container">
-            <nav>
-            <div class="logo">
-                <h4>Bryan Wills's Projects Page</h4>
+        <div class="container">
+            <div class="">
+                    <nav>
+                    <div class="logo">
+                        <h4>Bryan Wills's Projects Page</h4>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                        <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                        <a href="cursor.html">Cursor</a>
+                        </li>
+                        <li>
+                        <a href="https://blog.bryanwills.dev" target="_blank">Blog</a>
+                        </li>
+                        <li>
+                        <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                        <a href="bryanwills.org/family.html" target="_blank">Family</a>
+                        </li>
+                    </ul>
+                        <div class="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </nav>
+                    <script src="./js/burger.js"></script>
             </div>
-            <ul class="nav-links">
-                <li>
-                <a href="index.html">Home</a>
-                </li>
-                <li>
-                <a href="cursor.html">Cursor</a>
-                </li>
-                <li>
-                <a href="https://blog.bryanwills.dev" target="_blank">Blog</a>
-                </li>
-                <li>
-                <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                <a href="bryanwills.org/family.html" target="_blank">Family</a>
-                </li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        </div>
+        <div class="projects-main">
+            <div class="sparta">
+
             </div>
-            </nav>
-            <script src="./js/burger.js"></script>
-      </div>
+            <div class="org">
+
+            </div>
+        </div>
         <div class="form">
-                        <fieldset>
-                            <legend id="info" class="info-description">
-                            Enter Your Information
-                            </legend>
-                            <div>
-                                <label class="description" id="fullname" for="fullname">Full Name</label>
-                                <div>
-                                    <input id="fullname" name="fullname" type="text" class="fullname_input" size="8" tabindex="1" placeholder="First and Last Name" required>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="description" id="email" for="email">
-                                Email Address
-                                </label>
-                            <div>
-                                <input id="email" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" placeholder="Enter your email address" required>
-                            </div>
-                            </div>
-                            <div>
-                                <label class="description" id="message" for="message">Message:
-                                </label>
-                                    <textarea id="message" name="message" spellcheck="true" rows="10" cols="80" tabindex="3" maxlength="255" placeholder="Enter your message to me here"></textarea><br>
-                            <div>
-                        </fieldset>
-                        <div>
-                            <fieldset>
-                                <input id="radiosub_default" name="sub" type="hidden" value="Subscribe">
-                                    <legend id="subscription">Subscribe?</legend>
-                                    <div>
-                                        <input id="sub_yes" name="sub" type="radio" value="Sub" tabindex="4" checked="checked">
-                                            <label class="choice" for="sub_yes">Subscribe to my newsletter</label>
-                                    </div>
-                                    <div>
-                                        <input id="sub" name="sub" type="radio" value="Second Choice" tabindex="5">
-                                            <label class="choice" for="sub_no">I wish not to subscribe at this time</label>
-                                    </div>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset>
-                                    <legend id="services" class="services-description">
-                                    What services are you interested in?
+                                <fieldset>
+                                    <legend id="info" class="info-description">
+                                    Enter Your Information
                                     </legend>
-                                <div>
-                                    <div>
-                                        <input id="design" name="design" type="checkbox" value="First Choice" tabindex="6">
-                                            <label class="choice" for="design">Website Design</label>
+                                    <div class="name">
+                                        <label class="description" id="fullname" for="fullname">Full Name</label>
+                                        <div "input-options">
+                                            <input id="fullname" name="fullname" type="text" class="fullname_input" size="30" tabindex="1" placeholder="First and Last Name" required>
+                                        </div>
                                     </div>
-                                <div>
-                                    <input id="redesign" name="redesign" type="checkbox" value="Second Choice" tabindex="7">
-                                        <label class="choice" for="redesign">Website Re-Design</label>
-                                </div>
-                                <div>
-                                    <input id="other" name="other" type="checkbox" value="Third Choice" tabindex="8">
-                                        <label class="choice" for="other">Help my Startup get on the Internet</label>
-                                </div>
-                                <div>
-                                    <input id="other" name="other" type="checkbox" value=""Fourth Choice" tabindex="9">
-                                        <label class="choice" for="other">Other</label>
-                                </div>
-                            </fieldset>
-                        </div>
-                <br>
-                <div>
-                    <div>
-                        <input id="saveForm" name="saveForm" type="submit" value="Submit">
-                    </div>
-                    </div>
-        </form>
+                                    <div class="email">
+                                        <label class="description" id="email" for="email">
+                                        Email Address
+                                        </label>
+                                    <div class="email-input">
+                                        <input id="email" name="email" type="email" spellcheck="false" value="" size="30" maxlength="255" tabindex="2" placeholder="Enter your email address" required>
+                                    </div>
+                                    </div>
+                                    <div class="message">
+                                        <label class="description" id="message" for="message">Message:
+                                        </label>
+                                            <textarea id="message" name="message" spellcheck="true" rows="10" cols="80" tabindex="3" maxlength="255" placeholder="Enter your message to me here"></textarea>
+                                            <br>
+                                    </div>
+                                </fieldset>
+                                        <div class="subscription">
+                                            <fieldset>
+                                                <input id="radiosub_default" name="sub" type="hidden" value="Subscribe">
+                                                    <legend id="subscription">Subscribe?</legend>
+                                                    <div class="sub-yes">
+                                                        <input id="sub_yes" name="sub" type="radio" value="Sub" tabindex="4" checked="checked">
+                                                            <label class="choice" for="sub_yes">Subscribe to my newsletter</label>
+                                                    </div>
+                                                    <div class="sub-no">
+                                                        <input id="sub" name="sub" type="radio" value="Second Choice" tabindex="5">
+                                                            <label class="choice" for="sub_no">I wish not to subscribe at this time</label>
+                                                    </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="services">
+                                            <fieldset>
+                                                    <legend id="services" class="services-description">
+                                                    What services are you interested in?
+                                                    </legend>
+                                                <div>
+                                                    <div>
+                                                        <input id="design" name="design" type="checkbox" value="First Choice" tabindex="6">
+                                                            <label class="choice" for="design">Website Design</label>
+                                                    </div>
+                                                <div>
+                                                    <input id="redesign" name="redesign" type="checkbox" value="Second Choice" tabindex="7">
+                                                        <label class="choice" for="redesign">Website Re-Design</label>
+                                                </div>
+                                                <div>
+                                                    <input id="other" name="other" type="checkbox" value="Third Choice" tabindex="8">
+                                                        <label class="choice" for="other">Help my Startup get on the Internet</label>
+                                                </div>
+                                                <div>
+                                                    <input id="other" name="other" type="checkbox" value=""Fourth Choice" tabindex="9">
+                                                        <label class="choice" for="other">Other</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                            <div class="file-upload">
+                                                <label for="upload" class="file-upload__label" maxlength="10">Upload files</label>
+                                                    <input id="upload" class="file-upload__input" type="file" name="file-upload" size="10">
+                                            </div>
+                                <br>
+                                    <div>
+                                        <div>
+                                        <input id="saveForm" name="saveForm" type="submit" value="Submit">
+                                        </div>
+        </div>
+
+        </div>
             <footer>
                 <div id="copy">
-                <p>Copyright &copy; 2021 Bryan Wills</p>
+                    <p>Copyright &copy; 2021 Bryan Wills</p>
                 </div>
             </footer>
-
-  </body>
+    </body>
 </html>

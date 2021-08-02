@@ -38,17 +38,5 @@ upload button styles
     opacity: 0;
 }
 
-
-/*****************************************
- design styles
-******************************************/
-
-html {
-    font-family: 'helvetica neue', 'arial', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    padding-top: 5em;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    background: #EE4F47;
+background: #EE4F47;
 }
