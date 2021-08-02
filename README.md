@@ -1,10 +1,10 @@
 # CodeLouisville Project
 
-#### I originally planned to host this site at [bryanwills.org](bryanwills.org). I really wanted to implement a dark mode switch for my entire site, but had difficulties in getting it to work the way I wanted it to and look the way I wanted it to. The code I used from a Codepen that someone else had done, had the label ID in the main element which caused complications for me elsewhere. I still have my original site layout hosted on [bryanwills.org](bryanwills.org) with the elements and divs outlined with a border color.
+#### I originally planned to host this site at [bryanwills.org](https://bryanwills.org). I really wanted to implement a dark mode switch for my entire site, but had difficulties in getting it to work the way I wanted it to and look the way I wanted it to. The code I used from a Codepen that someone else had done, had the label ID in the main element which caused complications for me elsewhere. I still have my original site layout hosted on [bryanwills.org](https://bryanwills.org) with the elements and divs outlined with a border color.
 
 ## Homepage
 
-#### The homepage for [bryanwills.dev](bryanwills.dev) is just a simple site that shows a random picture every time the page is loaded or refreshed. If a user selects text on this page, the text color and highlighted background changes color, just with some simple CSS variables.
+#### The homepage for [bryanwills.dev](https://bryanwills.dev) is just a simple site that shows a random picture every time the page is loaded or refreshed. If a user selects text on this page, the text color and highlighted background changes color, just with some simple CSS variables.
 
 ## Cursor Page
 
@@ -13,7 +13,7 @@
 #### If you look at Dev Tools, it will show the live data for the mouse cursor coordinates for this page and script, which is what I used when trying to figure out what I was going to do with getting the mouse coordinates.
 
 ## Blog
-#### Prior to this class, I was working on hosting my own blog through my cloud server which points to [bryanwills.dev](bryanwills.dev) and created a sub-domain [blog.bryanwills.dev](blog.bryanwills.dev) which is riding a 11ty framework using a .eleventy.js file to call the options I wish to configure, input and output folders while the posts are written in Markdown which is converted to HTML using the Nunjucks language for templates. This is a hobby of mine and I want to start a technical blog to maybe get a following behind me. Halfway through the Code Louisivlle session, I found out about Forem which is the platform for one of my favorite sites, dev.to that they use for their blogging platform. I didn't have enough time to complete before the deadline.
+#### Prior to this class, I was working on hosting my own blog through my cloud server which points to [bryanwills.dev](https://bryanwills.dev) and created a sub-domain [blog.bryanwills.dev](https://blog.bryanwills.dev) which is riding a 11ty framework using a .eleventy.js file to call the options I wish to configure, input and output folders while the posts are written in Markdown which is converted to HTML using the Nunjucks language for templates. This is a hobby of mine and I want to start a technical blog to maybe get a following behind me. Halfway through the Code Louisivlle session, I found out about Forem which is the platform for one of my favorite sites, dev.to that they use for their blogging platform. I didn't have enough time to complete before the deadline.
 
 ## Projects Page
 #### Sparta Mortgage - Migrated a website for a customer from Wix to In Motion Hosting. In the process of redesigning the website to have a single page mobile layout and responsive design.
@@ -57,4 +57,4 @@ Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&s
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact&theme=monokai)](https://github.com/bryanwills/github-readme-stats)
 
 ## Going Further
-#### While in the Code Louisville course, I became more aware of dotfiles and the community that shares the dotfiles. I want to try and combine [/r/unixporn](https://www.reddit.com/r/unixporn/) and the [CodePen](www.codepen.io) platform into a combined web app that will allow users to customize their dotfiles and see the live updates on a *NIX system before developing the configuration in their own system. This will be a lot of work, but something I feel that can be done and will be successful and will get my name out there in the Software Development world. Users can also share their .config/sway/config files for their SwayWM in Arch Linux for example. 
+#### While in the Code Louisville course, I became more aware of dotfiles and the community that shares the dotfiles. I want to try and combine [/r/unixporn](https://www.reddit.com/r/unixporn/) and the [CodePen](https://www.codepen.io) platform into a combined web app that will allow users to customize their dotfiles and see the live updates on a *NIX system before developing the configuration in their own system. This will be a lot of work, but something I feel that can be done and will be successful and will get my name out there in the Software Development world. Users can also share their .config/sway/config files for their SwayWM in Arch Linux for example. 
