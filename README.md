@@ -16,8 +16,34 @@
 #### Prior to this class, I was working on hosting my own blog through my cloud server which points to [bryanwills.dev](bryanwills.dev) and created a sub-domain [blog.bryanwills.dev](blog.bryanwills.dev) which is riding a 11ty framework using a .eleventy.js file to call the options I wish to configure, input and output folders while the posts are written in Markdown which is converted to HTML using the Nunjucks language for templates. This is a hobby of mine and I want to start a technical blog to maybe get a following behind me. Halfway through the Code Louisivlle session, I found out about Forem which is the platform for one of my favorite sites, dev.to that they use for their blogging platform. I didn't have enough time to complete before the deadline.
 
 ## Projects Page
-#### Projects
+#### Sparta Mortgage - Migrated a website for a customer from Wix to In Motion Hosting. In the process of redesigning the website to have a single page mobile layout and responsive design.
 
+#### URL2BEN - Personal project to take URLs and save the important information and store it for indexing later on. I really liked the old school del.icio.us platform, so this is my remake of it using Python. This is all I have got so far.
+
+```
+import os
+import tkinter as tk
+import tkinter.filedialog
+
+r = tk.Tk()
+r.withdraw()
+photo_path= tkinter.filediaglog.askdirectory(title='what folder would you like to copy the contents from?', initialdir='/')
+
+
+#Get list of filenames in current directory
+file_list=[]
+
+for filename in os.listdir(photo_path):
+    if os.path.splitext(filename)[1]=='.JPG':
+        file_list.append(os.path.splitext(filename)[0])
+    else: pass
+
+file_search='code:('+' OR '.join(file_list)+')'
+
+r.clipboard_clear()
+r.clipboard_append(file_search)
+r.destroy()
+```
 
 ## Family Page
 #### Family Page - I created this page shortly before taking the Code Louisville course. The idea was to use a CSS Masonry layout that is responsive for the user and changes the number of columns visible depending on the device being used. I decided to include this page as I am proud of my family and it shows the knowledge I had prior to taking this class.
@@ -25,10 +51,10 @@
 ## My Github Account Stats
 ####I found this cool site from dev.to which showed you the different bages and information that you can display on your Readme page from Github. I have been on Github for a while and I have forked numerous repos that I wanted to look more into myself and I went a little crazy and at one time had 1,400+ repos on my account. I am going through and cleaning them up now, that's what happens when you troll Github late at night. I really enjoy working with Python and have done various tutorials to try and make different scripts through YouTube and Udemy. 
 
-## Going Further
-#### While in the Code Louisville course, I became more aware of dotfiles and the community that shares the dotfiles. I want to try and combine [/r/unixporn](https://www.reddit.com/r/unixporn/) and the [CodePen](www.codepen.io) platform into a combined web app that will allow users to customize their dotfiles and see the live updates on a *NIX system before developing the configuration in their own system. This will be a lot of work, but something I feel that can be done and will be successful and will get my name out there in the Software Development world. Users can also share their .config/sway/config files for their SwayWM in Arch Linux for example. 
-
 [![Bryan Wills's Github 
 Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&show_icons=true&theme=monokai&count_private=true)](https://github.com/bryanwills/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact&theme=monokai)](https://github.com/bryanwills/github-readme-stats)
+
+## Going Further
+#### While in the Code Louisville course, I became more aware of dotfiles and the community that shares the dotfiles. I want to try and combine [/r/unixporn](https://www.reddit.com/r/unixporn/) and the [CodePen](www.codepen.io) platform into a combined web app that will allow users to customize their dotfiles and see the live updates on a *NIX system before developing the configuration in their own system. This will be a lot of work, but something I feel that can be done and will be successful and will get my name out there in the Software Development world. Users can also share their .config/sway/config files for their SwayWM in Arch Linux for example. 

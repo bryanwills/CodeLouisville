@@ -188,26 +188,49 @@ nav {
 
 .sparta {
     display: grid;
-    height: 35vh;
-    width: 35vw;
-    background-image: url(//unsplash.it/200/200);
-    background-size: cover;
-    background-color: #606060;
-    width: 100%;
+    height: 20vh;
+    width: 25vw;
     z-index: -1;
     margin-top: 3em;
+    margin-bottom: 3em;
     font-size: 1.03rem;
     line-height: 1.5;
 }
 
-.org {
+.sparta h3 {
+    padding: 15px;
+    font-size: 1.03rem;
+    font-weight: normal;
+    color: #d9f8ff;
+}
+
+.sparta img {
+    border-radius: 10px;
+}
+
+.url {
+    margin-top: 65vh;
+    text-decoration: none;
 
 }
 
+.url a {
+    text-decoration: none;
+    color: #d9f8ff;
+    font-size: 1.03rem;
+    font-weight: normal;
+}
+
+.url h3{
+    padding: 15px;
+    font-size: 1.03rem;
+    font-weight: normal;
+    color: #d9f8ff;
+}
 
 .form {
   margin: 0px;
-  margin-top: 35vh;
+  margin-top: 3vh;
   padding: 10px;
   background-color: #606060;
 }
