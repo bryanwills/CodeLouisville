@@ -44,6 +44,7 @@ r.clipboard_clear()
 r.clipboard_append(file_search)
 r.destroy()
 ```
+#### Filling out the form should submit an actual email to me via [https://www.getform.io](https://www.getform.io). I attemtpted to set up a backend email server on my ESXi lab environment at home, but with it being a lower priority item, I did not get this completed in time. I did get the MX records set up with my domain provider, Google Domains but will finish it up later. Haven't configured an email server before to handle external URLs, I do have an internal email server configured with my Nagios Monitoring system to alert me of any events on my network though.
 
 ## Family Page
 #### Family Page - I created this page shortly before taking the Code Louisville course. The idea was to use a CSS Masonry layout that is responsive for the user and changes the number of columns visible depending on the device being used. I decided to include this page as I am proud of my family and it shows the knowledge I had prior to taking this class.
@@ -51,12 +52,26 @@ r.destroy()
 ## My Github Account Stats
 ####I found this cool site from dev.to which showed you the different bages and information that you can display on your Readme page from Github. I have been on Github for a while and I have forked numerous repos that I wanted to look more into myself and I went a little crazy and at one time had 1,400+ repos on my account. I am going through and cleaning them up now, that's what happens when you troll Github late at night. I really enjoy working with Python and have done various tutorials to try and make different scripts through YouTube and Udemy. 
 
+#### [My LinkedIn Page](https://www.linkedin.com/in/bryan-wills/)
+
 [![Bryan Wills's Github 
 Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&show_icons=true&theme=monokai&count_private=true)](https://github.com/bryanwills/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact&theme=monokai)](https://github.com/bryanwills/github-readme-stats)
 
+## Dev.to Developer Card
+
 <a href="https://app.daily.dev/bryanwi09"><img src="https://api.daily.dev/devcards/5f6b3c9b04ec4fefbbc33823439a6027.png?r=wm8" width="400" alt="Bryan Wills's Dev Card"/></a>
 
 ## Going Further
 #### While in the Code Louisville course, I became more aware of dotfiles and the community that shares the dotfiles. I want to try and combine [/r/unixporn](https://www.reddit.com/r/unixporn/) and the [CodePen](https://www.codepen.io) platform into a combined web app that will allow users to customize their dotfiles and see the live updates on a *NIX system before developing the configuration in their own system. This will be a lot of work, but something I feel that can be done and will be successful and will get my name out there in the Software Development world. Users can also share their .config/sway/config files for their SwayWM in Arch Linux for example. 
+
+### Sites used for reference when making this project.
+### [https://www.codepen.io](https://www.codepen.io)<br>
+### [https://www.css-tricks.com](https://www.css-tricks.com)<br>
+### [https://dev.to](https://dev.to) 
+### [https://youtube.com](https://youtube.com) - Various Tutorials<br>
+### [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)<br>
+### [https://kevinpowell.co](https://kevinpowell.co)<br>
+### [https://github.com](https://github.com) - Various Repos that I found helpful during this project. <br>
+
