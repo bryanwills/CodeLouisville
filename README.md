@@ -56,5 +56,7 @@ Stats](https://github-readme-stats.vercel.app/api?username=bryanwills&hide=prs&s
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bryanwills&layout=compact&theme=monokai)](https://github.com/bryanwills/github-readme-stats)
 
+<a href="https://app.daily.dev/bryanwi09"><img src="https://api.daily.dev/devcards/5f6b3c9b04ec4fefbbc33823439a6027.png?r=wm8" width="400" alt="Bryan Wills's Dev Card"/></a>
+
 ## Going Further
 #### While in the Code Louisville course, I became more aware of dotfiles and the community that shares the dotfiles. I want to try and combine [/r/unixporn](https://www.reddit.com/r/unixporn/) and the [CodePen](https://www.codepen.io) platform into a combined web app that will allow users to customize their dotfiles and see the live updates on a *NIX system before developing the configuration in their own system. This will be a lot of work, but something I feel that can be done and will be successful and will get my name out there in the Software Development world. Users can also share their .config/sway/config files for their SwayWM in Arch Linux for example. 
