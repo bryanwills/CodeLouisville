@@ -141,8 +141,9 @@ footer {
 
 .profile img {
   border-radius: 50%;
-  width: 22vw;
-  height: 30vh;
+  width: 15vw;
+  height: 25vh;
+  left: 25vw;
 }
 
 .social-dev img {

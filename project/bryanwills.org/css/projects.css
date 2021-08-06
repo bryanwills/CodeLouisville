@@ -184,9 +184,6 @@ nav {
   }
 }
 
-.projects-main {
-}
-
 .sparta {
   display: grid;
   z-index: -1;
@@ -197,17 +194,20 @@ nav {
 }
 
 .sparta h3 {
+
+}
+
+.sparta h5 {
   padding: 15px;
   font-size: 1.03rem;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .sparta img {
   border-radius: 20px;
   height: 65vh;
   width: 65vw;
-  margin-left: 10vw;
-  padding: 15px;
+  padding: 25px;
 }
 
 .url {
@@ -231,8 +231,7 @@ nav {
   height: 65vh;
   width: 65vw;
   border-radius: 30px;
-  padding: 20px;
-  margin-left: 10vw;
+  padding: 10px;
 }
 
 .form {
