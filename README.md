@@ -22,32 +22,7 @@
 
 #### URL2BEN - Personal project to take URLs and save the important information and store it for indexing later on. I really liked the old school del.icio.us platform, so this is my remake of it using Python. This is all I have got so far.
 
-```
-import os
-import tkinter as tk
-import tkinter.filedialog
-
-r = tk.Tk()
-r.withdraw()
-photo_path= tkinter.filediaglog.askdirectory(title='what folder would you like to copy the contents from?', initialdir='/')
-
-
-#Get list of filenames in current directory
-file_list=[]
-
-for filename in os.listdir(photo_path):
-    if os.path.splitext(filename)[1]=='.JPG':
-        file_list.append(os.path.splitext(filename)[0])
-    else: pass
-
-file_search='code:('+' OR '.join(file_list)+')'
-
-r.clipboard_clear()
-r.clipboard_append(file_search)
-r.destroy()
-```
-
-<img src="https://github.com/bryanwills/CodeLouisville/blob/main/project/bryanwills.org/images/URL2BEN_carbon_code.png">
+<img src="https://github.com/bryanwills/CodeLouisville/blob/main/project/bryanwills.org/images/URL2BEN_carbon_code.png" width="600" alt="URL2BEN main.py source code progress">
 
 #### Filling out the form should submit an actual email to me via [https://www.getform.io](https://www.getform.io). I attemtpted to set up a backend email server on my ESXi lab environment at home, but with it being a lower priority item, I did not get this completed in time. I did get the MX records set up with my domain provider, Google Domains but will finish it up later. Haven't configured an email server before to handle external URLs, I do have an internal email server configured with my Nagios Monitoring system to alert me of any events on my network though.
 
