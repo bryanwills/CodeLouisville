@@ -100,6 +100,22 @@ footer {
   line-height: 1.5;
 }
 
+.profile-pic {
+  margin-top: 10vh;
+  border-radius: 50%;
+  background-image: url("images/profile.jpeg");
+}
+
+.bio {
+  margin-top: 15em;
+  font-size: 0.8em;
+}
+
+.bio p {
+  margin: 1.5em;
+  line-height: 1.5;
+}
+
 .display-container {
   position: relative;
   display: flex;
@@ -208,6 +224,11 @@ nav {
   margin-top: 2em;
   color: var(--text-main);
   font-size: 0.8em;
+  text-align: center;
+}
+
+.text h6 {
+  padding: 1em;
 }
 
 /* Let's get responsive! */
