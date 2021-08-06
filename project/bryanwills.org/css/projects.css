@@ -189,8 +189,6 @@ nav {
 
 .sparta {
   display: grid;
-  height: 20vh;
-  width: 25vw;
   z-index: -1;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -205,11 +203,15 @@ nav {
 }
 
 .sparta img {
-  border-radius: 10px;
+  border-radius: 20px;
+  height: 65vh;
+  width: 65vw;
+  margin-left: 10vw;
+  padding: 15px;
 }
 
 .url {
-  margin-top: 65vh;
+  margin-top: 2vh;
   text-decoration: none;
 }
 
@@ -223,6 +225,14 @@ nav {
   padding: 15px;
   font-size: 1.03rem;
   font-weight: normal;
+}
+
+.url img {
+  height: 65vh;
+  width: 65vw;
+  border-radius: 30px;
+  padding: 20px;
+  margin-left: 10vw;
 }
 
 .form {
@@ -482,7 +492,11 @@ input#saveForm:hover {
     font-weight: normal;
   }
 
-  body {
+  .url img {
+    height: 35vh;
+    width: 35vw;
+    border-radius: 30px;
+    padding: 20px;
   }
 
   .container {
@@ -498,119 +512,117 @@ input#saveForm:hover {
     display: none;
   }
   .form {
-  margin: 0px;
-  margin-top: 3vh;
-  padding: 5px;
-}
-
-.form > div {
-  position: relative;
-  margin-top: 2vh;
-  width: 60%;
-}
-
-input:disabled {
-  color: white;
-}
-
-input:focus,
-textarea:focus {
-  background: rgb(245, 119, 178);
-  color: white;
-  font-style: italic;
-  z-index: 2;
-}
-
-textarea {
-  display: block;
-  resize: vertical;
-  width: 70%;
-  background-color: rgb(245, 119, 178);
-  color: white;
-}
-
-label {
-  position: relative;
-  /*color: rgb(5, 5, 27);*/
-  padding: 6px 5px;
-  margin-top: 0.3em;
-  margin-left: 0.5em;
-  border-radius: 30px;
-  width: 0;
-}
-
-.services {
-  color: #d9f8ff;
-}
-
-label.choice {
-  color: #d9f8ff;
-}
-
-fieldset {
-  color: #d9f8ff;
-}
-
-legend#info.info-description {
-  color: #d9f8ff;
-}
-legend#subscription {
-  color: #d9f8ff;
-}
-
-legend#services.services-description {
-  color: #d9f8ff;
-}
-input:placeholder-shown + label {
-  color: white;
-}
-
-::placeholder {
-  color: white;
-  font-style: italic;
-  font-weight: 100;
-}
-q
-form {
-  width: 80%;
-  label {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 50%;
+    margin: 0px;
+    margin-top: 3vh;
+    padding: 5px;
   }
+
+  .form > div {
+    position: relative;
+    margin-top: 2vh;
+    width: 60%;
+  }
+
+  input:disabled {
+    color: white;
+  }
+
   input:focus,
   textarea:focus {
-    padding: 1px 2px 8px 2px;
+    background: rgb(245, 119, 178);
+    color: white;
+    font-style: italic;
+    z-index: 2;
   }
-}
 
-input#saveForm {
-  width: 80px;
-  height: 30px;
-  background-color: #536b78;
-  position: relative;
-  border: 3px solid #57dab2;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.8em;
-  margin-top: 9vh;
-  margin-left: 0.5em;
-}
+  textarea {
+    display: block;
+    resize: vertical;
+    width: 70%;
+    background-color: rgb(245, 119, 178);
+    color: white;
+  }
 
-.file-upload__label {
-  display: block;
-  padding: 10px 10px 10px 10px;
-  cursor: pointer;
-  width: 18vw;
-  background-color: #536b78;
-  border-radius: 20px;
-  border: 3px solid #57dab2;
-  text-align: center;
-  transition: background 0.3s;
-}
+  label {
+    position: relative;
+    /*color: rgb(5, 5, 27);*/
+    padding: 6px 5px;
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+    border-radius: 30px;
+    width: 0;
+  }
 
+  .services {
+    color: #d9f8ff;
+  }
 
+  label.choice {
+    color: #d9f8ff;
+  }
+
+  fieldset {
+    color: #d9f8ff;
+  }
+
+  legend#info.info-description {
+    color: #d9f8ff;
+  }
+  legend#subscription {
+    color: #d9f8ff;
+  }
+
+  legend#services.services-description {
+    color: #d9f8ff;
+  }
+  input:placeholder-shown + label {
+    color: white;
+  }
+
+  ::placeholder {
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  form {
+    width: 80%;
+    label {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+    }
+    input:focus,
+    textarea:focus {
+      padding: 1px 2px 8px 2px;
+    }
+  }
+
+  input#saveForm {
+    width: 80px;
+    height: 30px;
+    background-color: #536b78;
+    position: relative;
+    border: 3px solid #57dab2;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-top: 9vh;
+    margin-left: 0.5em;
+  }
+
+  .file-upload__label {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    width: 18vw;
+    background-color: #536b78;
+    border-radius: 20px;
+    border: 3px solid #57dab2;
+    text-align: center;
+    transition: background 0.3s;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
@@ -642,6 +654,12 @@ input#saveForm {
   }
   .burger {
     display: none;
+  }
+  .url img {
+    height: 55vh;
+    width: 55vw;
+    border-radius: 30px;
+    padding: 20px;
   }
 }
 
