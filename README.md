@@ -10,6 +10,8 @@
 
 #### The Cursor page is a simple html page that calls a Javascript file that transforms the cursor from a standard arrow into a circle with a 3em radius, and when hovered over the image, it actually displays the grayscale equivalent inside the circle. There are different filters that can be implemented, and my goal was to allow for more interaction for the user in the form of a drop-down menu to select 3-4 different changes like blurring for example and then the user can switch back and forth between the different options. 
 
+#### I tried but was unsuccessful in creating a dropdown menu to allow users to be able to choose the backdrop-filter they wanted, as well as dynmanically changing the cursor size to control the area that the backdrop-filter is in effect. This was a fun thing to play around with and implement, a simple Google search sent me down the rabbit hole and I finally landed on this idea. I will continue to work on this on the side. I know it can be done from what I have seen from other people, just need to work on my JavaScript skills a bit more to implement.
+
 #### If you look at Dev Tools, it will show the live data for the mouse cursor coordinates for this page and script, which is what I used when trying to figure out what I was going to do with getting the mouse coordinates.
 
 ## Blog

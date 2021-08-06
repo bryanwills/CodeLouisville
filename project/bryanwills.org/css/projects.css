@@ -1,22 +1,27 @@
 :root {
-  --highlight-bg: #d9f8ff;
-  --highlight-txt: #212121;
+  --highlight-bg: #553ab8;
+  --highlight-txt: #25a954;
+  --bg-main: #0e141f;
+  --text-main: #b3c2df;
+  --link-bg-hover: #553ab8;
+  --link-fg-hover: #25a954;
+  --input-text: #d2d7e1;
 }
-
 /* If the user has dark mode enabled on their device, the site will be shown in dark mode as well */
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --highlight-bg: #d9f8ff;
     --highlight-txt: #212121;
   }
-}
+}*/
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   max-width: 1000px;
+  color: var(--text-main);
 }
 
 html,
@@ -34,7 +39,7 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   word-break: break-word;
-  background-color: #606060;
+  background-color: var(--bg-main);
   overflow-wrap: break-word;
   font-size: 1.03rem;
   line-height: 1.5;
@@ -60,8 +65,8 @@ footer {
 }
 
 .logo {
-  color: #cee5f2;
-  background: #606060;
+  color: var(--text-main);
+  background: var(--bg-main);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1em;
@@ -76,15 +81,14 @@ footer {
   margin: 0 auto;
   padding: 0 auto;
   line-height: 1.5;
-  color: var(--color-main, #24292e);
-  background-color: var(--bg-main, #606060);
+  color: var(--text-main);
+  background-color: var(--bg-main);
   font-family: sans-serif;
 }
 
 .display-container {
   position: relative;
   display: flex;
-  /*border: 3px solid red;*/
   margin-top: 2rem;
 }
 
@@ -96,7 +100,7 @@ nav {
   height: 7vh;
   width: 100%;
   padding: 5px;
-  background-color: #606060;
+  background-color: var(--bg-main);
   font-family: "Poppins", sans-serif;
   border-radius: 8px;
   font-size: 1.03rem;
@@ -110,7 +114,6 @@ nav {
   width: 60%;
   list-style: none;
   border-radius: 5px;
-  background-color: #606060;
 }
 
 .nav-links a {
@@ -126,15 +129,14 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: aliceblue;
-  color: #212121;
   border-radius: 6px;
   padding: 5px;
+  background-color: var(--link-bg-hover);
+  color: var(--link-fg-hover);
 }
 
 .nav-links li {
   list-style: none;
-  color: black;
 }
 
 .burger div {
@@ -183,56 +185,50 @@ nav {
 }
 
 .projects-main {
-
 }
 
 .sparta {
-    display: grid;
-    height: 20vh;
-    width: 25vw;
-    z-index: -1;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    font-size: 1.03rem;
-    line-height: 1.5;
+  display: grid;
+  height: 20vh;
+  width: 25vw;
+  z-index: -1;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 1.03rem;
+  line-height: 1.5;
 }
 
 .sparta h3 {
-    padding: 15px;
-    font-size: 1.03rem;
-    font-weight: normal;
-    color: #d9f8ff;
+  padding: 15px;
+  font-size: 1.03rem;
+  font-weight: normal;
 }
 
 .sparta img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .url {
-    margin-top: 65vh;
-    text-decoration: none;
-
+  margin-top: 65vh;
+  text-decoration: none;
 }
 
 .url a {
-    text-decoration: none;
-    color: #d9f8ff;
-    font-size: 1.03rem;
-    font-weight: normal;
+  text-decoration: none;
+  font-size: 1.03rem;
+  font-weight: normal;
 }
 
-.url h3{
-    padding: 15px;
-    font-size: 1.03rem;
-    font-weight: normal;
-    color: #d9f8ff;
+.url h3 {
+  padding: 15px;
+  font-size: 1.03rem;
+  font-weight: normal;
 }
 
 .form {
   margin: 0px;
   margin-top: 3vh;
   padding: 10px;
-  background-color: #606060;
 }
 
 .form > div {
@@ -249,6 +245,7 @@ input:focus,
 textarea:focus {
   background: rgb(245, 119, 178);
   color: white;
+  font-style: italic;
   z-index: 2;
 }
 
@@ -262,8 +259,12 @@ textarea {
 
 label {
   position: relative;
-  color: rgb(5, 5, 27);
+  /*color: rgb(5, 5, 27);*/
   padding: 6px 5px;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  border-radius: 30px;
+  width: 0;
 }
 
 .services {
@@ -293,7 +294,9 @@ input:placeholder-shown + label {
 }
 
 ::placeholder {
-    color: white;
+  color: white;
+  font-style: italic;
+  font-weight: 100;
 }
 
 label#fullname.description,
@@ -330,10 +333,6 @@ form {
   }
 }
 
-input:focus + label {
-  color: white;
-}
-
 input#saveForm {
   width: 120px;
   height: 35px;
@@ -343,6 +342,8 @@ input#saveForm {
   border-radius: 20px;
   cursor: pointer;
   font-size: 0.8em;
+  margin-top: 9vh;
+  margin-left: 0.5em;
 }
 
 input#saveForm:after {
@@ -351,6 +352,7 @@ input#saveForm:after {
   position: absolute;
   transition: all 0.4s;
   background-color: #57dab2;
+  width: 0;
   border: 3px solid #536b78;
 }
 
@@ -359,21 +361,19 @@ input#saveForm:active {
   line-height: 1;
   position: relative;
   background: #57dab2;
-  border: 3px solid #536b78;
 }
 
 input#saveForm:hover {
-  background: #57dab2;
   border: 3px solid #536b78;
   transition: all 0.4s ease-in;
-  width: 125px;
-  height: 40px;
+  background-color: #57dab2;
+  color: rgb(5, 5, 27);
 }
 
 .file-upload {
   position: absolute;
   display: inline-block;
-  width: 30vw;
+  background-color: var(--bg-main);
 }
 
 .file-upload:active {
@@ -381,7 +381,9 @@ input#saveForm:hover {
   line-height: 1;
   position: relative;
   background: #57dab2;
+  width: 1px;
   border: 3px solid #536b78;
+  border-radius: 20px;
 }
 
 .file-upload:after {
@@ -389,29 +391,23 @@ input#saveForm:hover {
   z-index: -1;
   position: absolute;
   transition: all 0.4s;
-  background-color: #57dab2;
-  border: 3px solid #536b78;
 }
 
 .file-upload__label {
   display: block;
   padding: 10px 10px 10px 10px;
   cursor: pointer;
-  color: #000;
   width: 18vw;
   background-color: #536b78;
-  border-radius: 0.6em;
+  border-radius: 20px;
   border: 3px solid #57dab2;
   text-align: center;
   transition: background 0.3s;
-  &:hover {
-    cursor: pointer;
-    background: #000;
-  }
 }
 
 .file-upload__label:hover {
   background: #57dab2;
+  color: rgb(5, 5, 27);
   border: 3px solid #536b78;
   transition: all 0.4s ease-in;
 }
@@ -426,7 +422,7 @@ input#saveForm:hover {
   width: 0;
   height: 100%;
   opacity: 0;
-  border: 2px solid azureblue;
+  border: 4px solid azureblue;
 }
 
 /* Let's get responsive! */
@@ -438,6 +434,52 @@ input#saveForm:hover {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .sparta img {
+    width: 530px;
+    height: 375px;
+  }
+  .sparta {
+    display: grid;
+    height: 20vh;
+    width: 25vw;
+    z-index: -1;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-size: 1.03rem;
+    line-height: 1.5;
+  }
+
+  .sparta h3 {
+    padding: 15px;
+    font-size: 1.03rem;
+    font-weight: normal;
+  }
+
+  .sparta img {
+    border-radius: 10px;
+  }
+
+  .url {
+    margin-top: 38vh;
+    text-decoration: none;
+  }
+
+  .url a {
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  .url h3 {
+    padding: 5px;
+    font-weight: normal;
   }
 
   body {
@@ -455,8 +497,120 @@ input#saveForm:hover {
   nav {
     display: none;
   }
-  ul {
+  .form {
+  margin: 0px;
+  margin-top: 3vh;
+  padding: 5px;
+}
+
+.form > div {
+  position: relative;
+  margin-top: 2vh;
+  width: 60%;
+}
+
+input:disabled {
+  color: white;
+}
+
+input:focus,
+textarea:focus {
+  background: rgb(245, 119, 178);
+  color: white;
+  font-style: italic;
+  z-index: 2;
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+  width: 70%;
+  background-color: rgb(245, 119, 178);
+  color: white;
+}
+
+label {
+  position: relative;
+  /*color: rgb(5, 5, 27);*/
+  padding: 6px 5px;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  border-radius: 30px;
+  width: 0;
+}
+
+.services {
+  color: #d9f8ff;
+}
+
+label.choice {
+  color: #d9f8ff;
+}
+
+fieldset {
+  color: #d9f8ff;
+}
+
+legend#info.info-description {
+  color: #d9f8ff;
+}
+legend#subscription {
+  color: #d9f8ff;
+}
+
+legend#services.services-description {
+  color: #d9f8ff;
+}
+input:placeholder-shown + label {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  font-style: italic;
+  font-weight: 100;
+}
+q
+form {
+  width: 80%;
+  label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
   }
+  input:focus,
+  textarea:focus {
+    padding: 1px 2px 8px 2px;
+  }
+}
+
+input#saveForm {
+  width: 80px;
+  height: 30px;
+  background-color: #536b78;
+  position: relative;
+  border: 3px solid #57dab2;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-top: 9vh;
+  margin-left: 0.5em;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  width: 18vw;
+  background-color: #536b78;
+  border-radius: 20px;
+  border: 3px solid #57dab2;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {

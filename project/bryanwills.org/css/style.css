@@ -1,22 +1,27 @@
 :root {
-  --highlight-bg: #79ffe1;
-  --highlight-txt: #0c4047;
+  --highlight-bg: #553ab8;
+  --highlight-txt: #25a954;
+  --bg-main: #0e141f;
+  --text-main: #b3c2df;
+  --link-bg-hover: #553ab8;
+  --link-fg-hover: #25a954;
 }
 
 /* If the user has dark mode enabled on their device, the site will be shown in dark mode as well */
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --highlight-bg: #d9f8ff;
     --highlight-txt: #212121;
   }
-}
+}*/
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   max-width: 1000px;
+  color: var(--text-main);
 }
 
 html,
@@ -30,11 +35,11 @@ html {
 }
 
 body {
-  transition: background-color 1.5s;
+  transition: background-color 1s;
   margin: 0 auto;
   overflow-x: hidden;
   word-break: break-word;
-  background-color: #313131;
+  background-color: var(--bg-main);
   overflow-wrap: break-word;
   font-size: 1.03rem;
   line-height: 1.5;
@@ -60,7 +65,7 @@ footer {
 }
 
 .logo {
-  color: #cee5f2;
+  color: var(--text-main);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1em;
@@ -76,7 +81,7 @@ footer {
   padding: 0 auto;
   line-height: 1.5;
   color: var(--color-main, #24292e);
-  background-color: var(--bg-main, #323232);
+  background-color: var(--bg-main);
   font-family: sans-serif;
 }
 
@@ -85,11 +90,10 @@ footer {
   height: 50vh;
   background-image: url(//unsplash.it/400/400);
   background-size: cover;
-  background-color: #323232;
+  background-color: var(--bg-main);
   width: 100%;
   place-items: center;
   z-index: -1;
-  /* margin: 35px; */
   margin-top: 3em;
   border-radius: 8px;
   font-size: 1.03rem;
@@ -111,7 +115,7 @@ nav {
   height: 7vh;
   width: 100%;
   padding: 5px;
-  background-color: #323232;
+  background-color: var(--bg-main);
   font-family: "Poppins", sans-serif;
   border-radius: 8px;
   font-size: 1.03rem;
@@ -124,11 +128,11 @@ nav {
   width: 60%;
   list-style: none;
   border-radius: 5px;
-  background-color: #323232;
+  background-color: var(--bg-main);
 }
 
 .nav-links a {
-  color: #cee5f2;
+  color: var(--text-main);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -140,15 +144,14 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: aliceblue;
-  color: #212121;
+  background-color: var(--link-bg-hover);
+  color: var(--link-fg-hover);
   border-radius: 6px;
   padding: 5px;
 }
 
 .nav-links li {
   list-style: none;
-  color: black;
 }
 
 .burger div {
@@ -203,7 +206,7 @@ nav {
 
 .text {
   margin-top: 2em;
-  color: #cee5f2;
+  color: var(--text-main);
   font-size: 0.8em;
 }
 
@@ -282,7 +285,7 @@ nav {
     height: 7vh;
     width: 60vw;
     padding: 5px;
-    background-color: #323232;
+    background-color: var(--bg-main);
     font-family: "Poppins", sans-serif;
     border-radius: 8px;
     font-size: 0.4rem;
@@ -295,7 +298,7 @@ nav {
     width: 60%;
     list-style: none;
     border-radius: 5px;
-    background-color: #323232;
+    background-color: var(--bg-main);
   }
 
   .nav-links a {
@@ -311,13 +314,12 @@ nav {
   }
 
   .nav-links a:hover {
-    background-color: aliceblue;
-    color: #212121;
+    background-color: var(--link-bg-hover);
+    color: var(--link-fg-hover);
   }
 
   .nav-links li {
     list-style: none;
-    color: black;
   }
 
   .burger div {

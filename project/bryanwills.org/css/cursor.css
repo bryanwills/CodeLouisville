@@ -1,23 +1,26 @@
 :root {
-  --highlight-bg: #79ffe1;
-  --highlight-txt: #0c4047;
+  --highlight-bg: #553ab8;
+  --highlight-txt: #25a954;
+  --text-main: #553ab8;
+  --link-bg-hover: #553ab8;
+  --link-fg-hover: #25a954;
 }
-
 /* If the user has dark mode enabled on their device, the site will be shown in dark mode as well */
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
     --highlight-bg: #d9f8ff;
     --highlight-txt: #212121;
   }
-}
+}*/
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   max-width: 1000px;
-  color: #323232;
+  color: var(--text-main);
+  background-color: var(--bg-main);
 }
 
 body {
@@ -26,13 +29,19 @@ body {
   cursor: none;
 }
 
+.container {
+  height: 60vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   min-height: 10vh;
   align-items: center;
-  margin: auto;
+  margin-left: 10vw;
 }
 
 .nav-links {
@@ -61,11 +70,16 @@ h1 {
 }
 
 .nav-links a {
-  color: #323232;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 1em;
+}
+
+.message {
+  text-align: center;
+  margin-left: 10vw;
+  padding: 15px;
 }
 
 .cursor {
@@ -83,7 +97,7 @@ h1 {
   transition-property: background, transform;
   transform-origin: 100% 100%;
   z-index: -1;
-  backdrop-filter: grayscale();
+  backdrop-filter: grayscale(100%);
 }
 
 .link-grow {
@@ -97,16 +111,26 @@ h1 {
 
 .cover {
   display: grid;
-  height: 55vh;
+  height: 60vh;
+  max-height: 60vh;
   position: relative;
   background-image: url(//unsplash.it/400/400);
   background-size: cover;
   background-color: #333;
   z-index: -3;
+  margin: 0 auto;
+  margin-left: 10vw;
+  border-radius: 30px;
 }
 
-h4,
-h2 {
+.cover-desc {
+  margin-left: 10vw;
+  padding: 15px;
+  pointer-events: none;
+}
+
+h5,
+h3 {
   padding: 5px;
   text-align: center;
 }

@@ -7,6 +7,7 @@
     <!-- <meta name="theme-color" content="#872e4e" media="(prefers-color-scheme: dark)"/> -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -128,13 +129,14 @@
                                                     </div>
                                                 </fieldset>
                                             </div>
-                                                <div class="file-upload">
-                                                    <label for="upload" class="file-upload__label" maxlength="10">Upload files</label>
-                                                        <input id="upload" class="file-upload__input" type="file" name="file-upload" size="10">
-                                                </div>
-            </div>
 
-            <br>
+            </div>
+                    <div class="file-upload">
+                        <label for="upload" class="file-upload__label">
+                            Upload files
+                        </label>
+                            <input id="upload" class="file-upload__input" type="file" name="file-upload" tabindex="10" value="Upload">
+                    </div>
                 <div>
                     <div>
                     <input id="saveForm" name="saveForm" type="submit" value="Submit">
