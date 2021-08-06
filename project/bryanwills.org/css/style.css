@@ -100,15 +100,26 @@ footer {
   line-height: 1.5;
 }
 
-.profile-pic {
-  margin-top: 10vh;
+.bio img {
+  height: 25%;
+  width: 25%;
   border-radius: 50%;
-  background-image: url("images/profile.jpeg");
 }
 
+/* found this rainbow gradient on CodePen and wanted to include it to add some color to my page. I suck at colors for websites and spent far too much time on trying to match them. https://codepen.io/unnegative/pen/dVwYBq */
 .bio {
-  margin-top: 15em;
+  margin-top: 50vh;
   font-size: 0.8em;
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
 }
 
 .bio p {
@@ -121,6 +132,41 @@ footer {
   display: flex;
   /*border: 3px solid red;*/
   margin-top: 2rem;
+}
+
+.social {
+  margin-top: 10vh;
+  float: left;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 22vw;
+  height: 30vh;
+}
+
+.social-dev img {
+  width: 15vw;
+  height: 15vh;
+  position: absolute;
+  right: 40vw;
+  top: 20vh;
+}
+
+.social-linkedin img {
+  width: 15vw;
+  height: 15vh;
+  position: absolute;
+  right: 25vw;
+  top: 20vh;
+}
+
+.social-github img {
+  position: absolute;
+  right: 10vw;
+  top: 20vh;
+  width: 15vw;
+  height: 15vh;
 }
 
 nav {
